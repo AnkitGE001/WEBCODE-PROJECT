@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2 ;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)40%,rgba(0,0,0,0.5)40%),
+    url(assets/as8.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #fdf9f9;
+
+  }
+  
+  .question {
+    margin: 30px auto;
+    width: 80%;
+    background-color:rgb(121, 143, 168);
+    opacity: 0.8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+  }
+  
+  .question h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .question p {
+    margin-top: 0;
+  }
+  
+  .question ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .question li {
+    margin-bottom: 10px;
+  }
+  
+  .question input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .submit {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .submit input[type="submit"] {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit input[type="submit"]:hover {
+    background-color: #2fb334;
+  }
+
+  

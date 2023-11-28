@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Playlist</title>
+    <link rel="stylesheet" href="vl.css">
+</head>
+<body>
+  
+    
+    <!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  padding-left: 65%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="Aboutus.html">About</a></li>
+</ul>
+
+</body>
+</html>
+    
+    <div class="container">
+        <div class="main-video">
+        <div class="video">
+            <video src="assets/[FreeCourseSite.com] Udemy - The Complete 2022 Web Development Bootcamp/01 - Front-End Web Development/001 What You'll Get in This Course.mp4" controls muted autoplay></video>
+            <h3 class="title">01. Intro to WEBCODE</h3>
+        </div>
+    </div>
+    <div class="video-list">
+        <div class="vid active">
+            <video src="assets/[FreeCourseSite.com] Udemy - The Complete 2022 Web Development Bootcamp/01 - Front-End Web Development/005 How Does the Internet Actually Work_.mp4" controls muted autoplay></video>
+            <h3 class="title"> Course info</h3>
+        </div>
+        <div class="vid">
+            <video src="assets/[FreeCourseSite.com] Udemy - The Complete 2022 Web Development Bootcamp/01 - Front-End Web Development/006 How Do Websites Actually Work_.mp4" controls muted autoplay></video>
+            <h3 class="title"> How websites work</h3>
+        </div>
+        <div class="vid">
+            <video src="assets/[FreeCourseSite.com] Udemy - The Complete 2022 Web Development Bootcamp/01 - Front-End Web Development/009 Setup Packages.mp4" controls muted autoplay></video>
+            <h3 class="title"> Setup Packages</h3>
+        </div>
+        <div class="vid">
+            <video src="assets/[FreeCourseSite.com] Udemy - The Complete 2022 Web Development Bootcamp/02 - Introduction to HTML/001 Introduction to HTML.mp4" controls muted autoplay></video>
+            <h3 class="title"> What is HTML</h3>
+        </div>
+        <div class="vid">
+            <video src="assets/[FreeCourseSite.com] Udemy - The Complete 2022 Web Development Bootcamp/02 - Introduction to HTML/002 The Anatomy of an HTML Tag.mp4" controls muted autoplay></video>
+            <h3 class="title"> The Anatomy of HTML</h3>
+        </div>
+        <div class="vid">
+            <video src="assets/[FreeCourseSite.com] Udemy - The Complete 2022 Web Development Bootcamp/02 - Introduction to HTML/003 What we're building - HTML Personal Site.mp4" controls muted autoplay></video>
+            <h3 class="title"> Making Our personal Website</h3>
+        </div>
+        <div class="vid">
+            <video src="assets/[FreeCourseSite.com] Udemy - The Complete 2022 Web Development Bootcamp/02 - Introduction to HTML/004 What is The HTML Boilerplate_.mp4" controls muted autoplay></video>
+            <h3 class="title"> Function in HTML</h3>
+        </div>
+        <div class="vid">
+            <video src="assets/[FreeCourseSite.com] Udemy - The Complete 2022 Web Development Bootcamp/02 - Introduction to HTML/005 How to Structure Text in HTML.mp4" controls muted autoplay></video>
+            <h3 class="title"> Structure in HTML</h3>
+        </div>
+    </div>
+    </div>
+   <Script>
+ let listVideo=document.querySelector('.video-list .vid') ;
+   let mainVideo= document.querySelector('.main-video video');
+   let title= document.querySelector('.main-video .title');
+    listVideo.forEach(video=>{
+        video.onclick=()=>{
+            listVideo.forEach(vid=> vid.classList.remove(active));
+            if(video.classList.contains('active')){
+                let src= video.children[0].getAttribute('src');
+                mainVideo.src=src;
+                let text = video.children[1].innerHTML;
+                title.innerHTML=text;
+            }
+        }
+    })
+   </Script>
+
+ 
+    <footer>
+        <p>&copy; 2023 @ WebCode</p>
+    </footer>
+</body>
+</html>
